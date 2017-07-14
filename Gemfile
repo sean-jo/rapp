@@ -7,6 +7,7 @@ end
 
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
