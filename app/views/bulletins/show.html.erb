@@ -1,14 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @bulletin.title %>
-</p>
+<h2>Preview Bulletin</h2>
 
-<p>
-  <strong>Description:</strong>
-  <%= @bulletin.description %>
-</p>
+<table class="table table-bordered">
+  <tr>
+    <th>title</th>
+    <td><%= @bulletin.title %></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td><%= @bulletin.description %></td>
+  </tr>
+  <tr>
+    <th>Post Type</th>
+    <td><%= @bulletin.post_type.capitalize %></td>
+  </tr>
+  <tr>
+    <th>Created at</th>
+    <td><%= @bulletin.created_at %></td>
+  </tr>
+</table>
 
-<%= link_to 'Edit', edit_bulletin_path(@bulletin) %> |
-<%= link_to 'Back', bulletins_path %>
+<%= link_to 'Edit', edit_bulletin_path(@bulletin), class: 'btn btn-default' %>
+<%= link_to 'Back', bulletins_path, class: 'btn btn-default' %>
